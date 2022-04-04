@@ -1,0 +1,90 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "6.1 Beden gyzgyny ýokarlanýan çaga",
+            "childElement": "ch06_01.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "6.2 Gyzzyrma",
+            "childElement": "ch06_02.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 3,
+            "title": "6.3 Meningit",
+            "childElement": "ch06_03.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 4,
+            "title": "6.4 Gyzamyk",
+            "childElement": "ch06_04.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 5,
+            "title": "6.5 Sepsis",
+            "childElement": "ch06_05.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 6,
+            "title": "6.6 Garahassa",
+            "childElement": "ch06_06.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 7,
+            "title": "6.7 Gulagyň ýokanjy",
+            "childElement": "ch06_07.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 8,
+            "title": "6.8 Peşew ýollarynyň ýokanjy",
+            "childElement": "ch06_08.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 9,
+            "title": "6.9 Septiki artrit ýa-da osteomiýelit",
+            "childElement": "ch06_09.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 10,
+            "title": "6.10 Denge gyzdyrmasy",
+            "childElement": "ch06_10.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 11,
+            "title": "6.11 Rewmatiki gyzdyrma",
+            "childElement": "ch06_11.html",
+            "childElementType": "chapter"
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "title": "Bu bapda 2 aýdan 5 ýaşa çenli çagalarda gyzgynyň ýokary galmaklygy bilen geçýän keseller berlen. Gyzgyny ýokary galýan bäbekleriň alnyp barlyşy ",
+            "childElement": null,
+            "childElementType": "html"
+        },
+        {
+            "id": 2,
+            "title": "3 bapda",
+            "childElement": "content_3.json",
+            "childElementType": "link"
+        },
+        {
+            "id": 3,
+            "title": ".",
+            "childElement": null,
+            "childElementType": "html"
+        }
+    ]
+]

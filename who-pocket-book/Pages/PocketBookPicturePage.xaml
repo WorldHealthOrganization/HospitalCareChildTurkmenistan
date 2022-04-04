@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" xmlns:views="clr-namespace:who_pocket_book.Views"
+             ios:Page.ModalPresentationStyle="FormSheet"
+             x:Class="who_pocket_book.Pages.PocketBookPicturePage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="0">
+            <StackLayout HeightRequest="55" BackgroundColor="White" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Padding="10,0">
+                <Button Text="{DynamicResource back}" TextColor="{DynamicResource colorPageTitle}" HorizontalOptions="Start" VerticalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="GoBack" FontAttributes="Bold">
+                    <Button.Margin>
+                        <OnPlatform x:TypeArguments="Thickness" iOS="10" Android="5"/>
+                    </Button.Margin>
+                    <Button.FontSize>
+                        <OnPlatform x:TypeArguments="x:Double" iOS="16" Android="12"/>
+                    </Button.FontSize>
+                </Button>
+                <Label x:Name="title" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" VerticalOptions="FillAndExpand" VerticalTextAlignment="Center" FontSize="16" FontAttributes="Bold" MaxLines="2" LineBreakMode="TailTruncation"/>
+                <Button Text="{DynamicResource delete}" TextColor="{DynamicResource colorPageTitle}" HorizontalOptions="End" VerticalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="Delete" FontAttributes="Bold">
+                    <Button.Margin>
+                        <OnPlatform x:TypeArguments="Thickness" iOS="10" Android="5"/>
+                    </Button.Margin>
+                    <Button.FontSize>
+                        <OnPlatform x:TypeArguments="x:Double" iOS="16" Android="12"/>
+                    </Button.FontSize>
+                </Button>
+            </StackLayout>
+            <BoxView HeightRequest="1" HorizontalOptions="FillAndExpand" BackgroundColor="Black"/>
+            <views:ZoomGestureContainer HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="16" Padding="0" BackgroundColor="LightGray" IsClippedToBounds="True">
+                <views:ZoomGestureContainer.Content>
+                    <Image x:Name="image" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="0" BackgroundColor="LightGray" Aspect="AspectFit"/>
+                </views:ZoomGestureContainer.Content>
+            </views:ZoomGestureContainer>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

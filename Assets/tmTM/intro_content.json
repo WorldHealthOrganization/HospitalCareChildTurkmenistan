@@ -1,0 +1,37 @@
+[
+  [
+   {
+    "id": 1,
+    "title": "Sözbaşy",
+    "childElement": "in_1.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 2,
+    "title": "Minnetdarlyk sözi",
+    "childElement": "in_2.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 3,
+    "title": "Bar bolan gysgaltmalar",
+    "childElement": "in_3.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 4,
+    "title": "Awtorlyk hukugy",
+    "childElement": "in_4.html",
+    "childElementType": "chapter"
+   }
+  ],
+  [
+   {
+    "id": 1,
+    "title": "Nusga 1. Çagalary hassahanada alyp barmaklygyň tapgyrlary: esasy pursatlar",
+    "childElement": "sh01.html",
+    "childElementType": "chapter"
+   }
+  ]
+ ]
+ 

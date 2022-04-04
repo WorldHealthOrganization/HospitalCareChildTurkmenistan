@@ -1,0 +1,127 @@
+[
+    [
+      {
+        "id": 1,
+        "title": "1.1 Saýlamaklyk",
+        "childElement": "ch01_01.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 2,
+        "title": "1.2 Gaýragoýulmasyz sortlamaklygyň tapgyrlarynyň gysgaça",
+        "childElement": "ch01_02.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 3,
+        "title": "1.3 Gaýragoýulmasyz we ilkinjilik alamatlara baha bermek",
+        "childElement": "ch01_03.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 4,
+        "title": "1.4 Agyr iýmitlendirmäniň bozulmalary bolan çaga gaýragoýulmasyz kömegi berlişi",
+        "childElement": "ch01_04.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 5,
+        "title": "1.5 Gaýragoýulmasyz alamatlary bolan çagalary barlamaklygyň usullary",
+        "childElement": "ch01_05.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 6,
+        "title": "1.6 Giňden ýaýran zäherlenmeleriň görnüşleri",
+        "childElement": "ch01_06.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 7,
+        "title": "1.7 Gark bolmak",
+        "childElement": "ch01_07.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 8,
+        "title": "1.8 Elektroşikes",
+        "childElement": "ch01_08.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 9,
+        "title": "1.9 Has köp ýaýran zäherli jandarlaryň çakmagy",
+        "childElement": "ch01_09.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 10,
+        "title": "1.10 Şikesler we ýaralanmalar (döwükler)",
+        "childElement": "ch01_10.html",
+        "childElementType": "chapter"
+      }
+    ],
+    [
+      {
+        "id": 1,
+        "title": "Nusga 2. Hemme düşýän çagalary sortlamak",
+        "childElement": "sh02.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 2,
+        "title": "Nusga 3. Del jisimiň aspirasiýasynda bäbege we 1 ýaşdan uly çaga kömegiň berlişi",
+        "childElement": "sh03.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 3,
+        "title": "Nusga 4. Dem alyşyň obstruktiw bozulmalarynda dem alyş ýollarynyň geçirijiligini nädip goldamak (ýa-da ýaňy dem alyşyň durmagy bolup geçen)",
+        "childElement": "sh04.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 4,
+        "title": "Nusga 5. Kislorody nädip bermeli",
+        "childElement": "sh05.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 5,
+        "title": "Nusga 6. Huşsyz çagany nädip ýatyrmaly",
+        "childElement": "sh06.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 6,
+        "title": "Nusga 7. Agyr iýmitlendirmäniň bozulmalary bolmadyk we Şok ýagdaýyndaky çaga damardan suwuklyklary nähili çaltlykda goýbermeli",
+        "childElement": "sh07.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 7,
+        "title": "Nusga 8. Agyr iýmitlendirmäniň bozulmalary bolan we şok ýagdaýyndaky çaga suwuklyklary nähili çaltlykda goýbermeli",
+        "childElement": "sh08.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 8,
+        "title": "Nusga 9. Diazepamy (ýa-da paraldegidi) rektal nädip goýmaly",
+        "childElement": "sh09.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 9,
+        "title": "Nusga 10. Glýukozany damardan nädip boýbermeli",
+        "childElement": "sh10.html",
+        "childElementType": "chapter"
+      },
+      {
+        "id": 10,
+        "title": "Nusga 11. Şoga garşy kömegi berilenden soňra agyr suwsyzlykda gaýra goýulmasyz kömegiň berlişi",
+        "childElement": "sh11.html",
+        "childElementType": "chapter"
+      }
+    ]
+  ]
+  

@@ -1,0 +1,115 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "4.1 Üsgülewikli çaga",
+            "childElement": "ch04_01.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "4.2 Pnewmoniýa",
+            "childElement": "ch04_02.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 3,
+            "title": "4.3 Pnewmoniýanyň gaýraüzülmeleri",
+            "childElement": "ch04_03.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 4,
+            "title": "4.4 Üsgülewik we sowuklama",
+            "childElement": "ch04_04.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 5,
+            "title": "4.5 Astmoid dem alyş bilen geçýän ýagdaýlar",
+            "childElement": "ch04_05.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 6,
+            "title": "4.6 Stridor bilen geçýän ýagdaýlar",
+            "childElement": "ch04_06.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 7,
+            "title": "4.7 Dowamly üsgülewik bilen geçýän ýagdaýlar",
+            "childElement": "ch04_07.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 8,
+            "title": "4.8 Ýürek ýetmezçiligi",
+            "childElement": "ch04_08.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 9,
+            "title": "4.9 Ýüregiň rewmatiki keselleri",
+            "childElement": "ch04_09.html",
+            "childElementType": "chapter"
+        }
+    ],
+    
+    [
+        {
+            "id": 1,
+            "title": "Kiçijik çagalarda üsgülewik we kynlaşan dem alyş köp ýaýran kynçylyklaryň biridir. Olaryň emele getirýän sebäpleri öýkeniň ýeňiljek kesellerinden başlap çaganyň ömrüne howp salýan ýagdaýlary öz içine alýar. Bu bapda 2 aýdan 5 ýaş aralygyndaky çagalarda üsgülewigi we kynlaşan dem alyşy döredip biläýjek esasy keseller barada aýdylýar. Bu kesellerde dfferensial diagnostikanyň geçirilişi ",
+            "childElement": null,
+            "childElementType": "html"
+        },
+        {
+            "id": 2,
+            "title": "bap 2",
+            "childElement": "content_2.json",
+            "childElementType": "link"
+        },
+        {
+            "id": 3,
+            "title": " berilen. Bu kynçylyklaryň bäbeklerde alnyp barlyşy ",
+            "childElement": null,
+            "childElementType": "html"
+        },
+        {
+            "id": 4,
+            "title": "bap 3",
+            "childElement": "content_3.json",
+            "childElementType": "link"
+        },
+        {
+            "id": 5,
+            "title": ", agyr iglemeleri çagalarda bolsa ",
+            "childElement": null,
+            "childElementType": "html"
+        },
+        {
+            "id": 6,
+            "title": "bap 7",
+            "childElement": "content_7.json",
+            "childElementType": "link"
+        },
+        {
+            "id": 7,
+            "title": " görkezilen. Adaty üsgülewigi ýönekeý sowuklama döredip bilýär, sowuklama bilen bolsa çagalar ýylyň dowamynda birnäçe sapar keselläp bilýär. Üsgülewikli we kynlaşan dem alyşly has agyr gaýraüzülmeleri döredip bilýän we çaganyň ömrüne howp salýan kesel bu pnewmoniýadyr (öýken sowuklamasy). Bu keseli differensial diagnostika geçirilen her bir ýagdaýda guman etmeli (",
+            "childElement": null,
+            "childElementType": "html"
+        },
+        {
+            "id": 8,
+            "title": "bar 4.1",
+            "childElement": "ch04_01.html",
+            "childElementType": "link"
+        },
+        {
+            "id": 9,
+            "title": ").",
+            "childElement": null,
+            "childElementType": "html"
+        }
+    ]
+]

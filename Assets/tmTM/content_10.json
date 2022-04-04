@@ -1,0 +1,68 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "10.1 Iýmitlendirme",
+            "childElement": "ch10_01.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "10.2 Suwuklyk balansyny goldamaklyk",
+            "childElement": "ch10_02.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 3,
+            "title": "10.3 Beden gyzgynynyň ýokarlanmagyny alyp barmak",
+            "childElement": "ch10_03.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 4,
+            "title": "10.4 Agyryny gözegçilik etmek",
+            "childElement": "ch10_04.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 5,
+            "title": "10.5 Ganazlygy alyp barmak",
+            "childElement": "ch10_05.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 6,
+            "title": "10.6 Gan goýbermek",
+            "childElement": "ch10_06.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 7,
+            "title": "10.7 Kislorod bilen bejergi",
+            "childElement": "ch10_07.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 8,
+            "title": "10.8 Jäjekler we jäjekler bilen bejergi",
+            "childElement": "ch10_08.html",
+            "childElementType": "chapter"
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "title": "Nusga 16. Näsag we sagdyn çaganyň iýmitlenişi baradaky maslahatlar",
+            "childElement": "sh16.html",
+            "childElementType": "chapter"
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "title": "Ýokary derejeli hassahana kömegini ýerine ýetirmeklik üçin hassahananyň işgärleriniň gündelik işi indikilere esaslanan bolmaly: \n • ene-atalar bilen arabaglanyşyk saklamaklyk;  \n • pediatriýa bölümiň işini meýileşdirmek, agyr çagalara ilki bilen kömek beriler ýaly we agyr çagalar kislorod bilen bejergi berilýän we gaýragoýulmasyz kömek berilýän otaglara ýakyn ýerleşdirilmeli;  \n • çaga üçin komfort ýagdaýlary üpjün etmeklik we agyry sindromyny döredýän emlerde dogry agyrsyzlandyrmany geçirmeklik;  \n • saglygy goraýyş işgärleriniň elleriniň arassalygyny we beýleki arassaçylyk usullaryny saklamaklyk bilen, hassahana içindäki ýokuşmalaryň bolmazlygynyň öňüni almak;  \n • iýmitlendirmäniň agyr bozulamalary bolan we kiçijik çagalaryň bolýan otaglarynda, olarda gipotermiýa alamatlaryny we beýleki gaýraüzülmeleriň döremezligi üçin ýylylygy saklamaklyk.",
+            "childElement": null,
+            "childElementType": "html"
+        }
+    ]
+]

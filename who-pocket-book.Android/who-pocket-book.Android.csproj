@@ -1,0 +1,1284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6742B557-E657-4587-8630-1D5900CCCDB1}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>who_pocket_book.Droid</RootNamespace>
+    <AssemblyName>who-pocket-book.Android</AssemblyName>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <TargetFrameworkVersion>v11.0</TargetFrameworkVersion>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidSupportedAbis>armeabi-v7a;x86;x86_64;arm64-v8a</AndroidSupportedAbis>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidCreatePackagePerAbi>true</AndroidCreatePackagePerAbi>
+    <AndroidEnableSGenConcurrent>false</AndroidEnableSGenConcurrent>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <AndroidCreatePackagePerAbi>false</AndroidCreatePackagePerAbi>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+    <AndroidPackageFormat>aab</AndroidPackageFormat>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AppCenter">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Analytics">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Crashes">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Realm">
+      <Version>10.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="ThriveGmbH.BottomNavigationBar.XF">
+      <Version>1.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>5.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat.Resources">
+      <Version>1.1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.MediaRouter">
+      <Version>1.2.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Palette">
+      <Version>1.0.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
+    <PackageReference Include="Xamarin.Android.Support.Design" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.v4" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Android.Support.CustomTabs" Version="28.0.0.3" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileManager.cs" />
+    <Compile Include="Helpers\AssetPath.cs" />
+    <Compile Include="Helpers\ImageResizer.cs" />
+    <Compile Include="Helpers\JsonReaderHelper.cs" />
+    <Compile Include="OrientationHandler.cs" />
+    <Compile Include="Renderers\HybridWebViewRenderer.cs" />
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\about" />
+    <AndroidAsset Include="Assets\content_1.json" />
+    <AndroidAsset Include="Assets\content_2.json" />
+    <AndroidAsset Include="Assets\content_3.json" />
+    <AndroidAsset Include="Assets\content_4.json" />
+    <AndroidAsset Include="Assets\content_5.json" />
+    <AndroidAsset Include="Assets\content_6.json" />
+    <AndroidAsset Include="Assets\content_7.json" />
+    <AndroidAsset Include="Assets\content_8.json" />
+    <AndroidAsset Include="Assets\content_9.json" />
+    <AndroidAsset Include="Assets\content_10.json" />
+    <AndroidAsset Include="Assets\content_11.json" />
+    <AndroidAsset Include="Assets\content_12.json" />
+    <AndroidAsset Include="Assets\content_pr1.json" />
+    <AndroidAsset Include="Assets\content_pr2.json" />
+    <AndroidAsset Include="Assets\content_pr4.json" />
+    <AndroidAsset Include="Assets\content_pr5.json" />
+    <AndroidAsset Include="Assets\intro_content.json" />
+    <AndroidAsset Include="Assets\main_content.json" />
+    <AndroidAsset Include="Assets\search.json" />
+    <AndroidAsset Include="Assets\filesTitles.json" />
+    <AndroidAsset Include="Assets\.DS_Store" />
+    <AndroidAsset Include="Assets\fileTitles.json" />
+    <AndroidAsset Include="Assets\img\.DS_Store" />
+    <AndroidAsset Include="Assets\mres\.DS_Store" />
+    <AndroidAsset Include="Assets\shemats\.DS_Store" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.xml" />
+    <AndroidResource Include="Resources\layout\Toolbar.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\values\colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\who-pocket-book\who-pocket-book.csproj">
+      <Project>{3d80231e-f344-42c6-a9ea-ca30b72eff0a}</Project>
+      <Name>who-pocket-book</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_country.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_infection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_country.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_infection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_country.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_infection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_country.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_infection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_country.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_infection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-v24\ic_launcher_foreground.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_launcher_background.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_foreground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_foreground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_foreground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_expanded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_expanded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_expanded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_expanded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_expanded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\file_paths.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\magnifying_glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_expandedb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_expandedt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\splash_screen.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch9f1n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch03p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch03p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch03p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch03p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch04p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch04p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch04p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch04p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch04p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch04p06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch04p07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch04p08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch04p09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch04p10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch04p11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch04p12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch05p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch05p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch05p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch06p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch06p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch06p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch06p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch06p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch06p06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch06p07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch06p08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch06p09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch07p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch07p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch07p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch08p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch08p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch09p21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch9f1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\ch10p19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr01p17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr2f1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr2f1n.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr2f2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr04p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh03p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh03p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh03p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh03p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh04p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh04p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh04p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh04p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh04p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh05p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh05p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh06p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh06p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh12p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh12p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh12p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh12p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh12p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh12p06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\sh16p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c4.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c5.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c6.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c7.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c8.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c9.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c10.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c11.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_c12.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\back_button_clicked.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\bsq.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\bsqs.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\buls.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c4.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c5.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c6.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c7.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c8.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c9.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c10.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c11.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_c12.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\button_clicked.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\dashs.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\msq.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\msqs.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\mtr.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\mtrs.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\images\vid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\iphonec.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\showpic.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\shemats\graphBoys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\shemats\graphGirls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\shemats\sh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\shemats\sh12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\shemats\sh13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\bib.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch01__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch01_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch01_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch01_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch01_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch01_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch01_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch01_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch01_08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch01_09.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch01_10.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch02__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch02_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch02_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch02_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch02_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch02_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_09.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_10.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_11.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_12.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_13.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch03_14.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch04__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch04_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch04_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch04_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch04_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch04_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch04_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch04_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch04_08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch04_09.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch05__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch05_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch05_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch05_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch05_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch06__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch06_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch06_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch06_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch06_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch06_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch06_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch06_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch06_08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch06_09.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch06_10.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch06_11.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch07__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch07_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch07_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch07_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch07_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch07_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch07_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch07_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch08__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch08_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch08_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch08_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch08_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch08_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch08_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch08_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch09__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch09_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch09_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch09_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch09_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch09_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch10__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch10_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch10_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch10_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch10_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch10_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch10_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch10_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch10_08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch11__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch11_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch11_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch11_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch12__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch12_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch12_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch12_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch12_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch12_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch12_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch12_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ch12_08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\in_1.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\in_2.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\in_3.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\in_4.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\ind.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\intro.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr01__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr01_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr01_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr01_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr01_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr01_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr01_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr01_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr02__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr02_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr02_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr02_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr02_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr03__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr04__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr04_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr05__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr05_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr05_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\pr06__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\settings.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh09.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh10.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh11.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh12.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh13.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh14.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh15.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sh16.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\shemats\sh2_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\shemats\sh2_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\shemats\Table74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\mres\panzoom.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\shemats\sh2_c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr2f1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\apple-touch-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\search.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\img\pr2f1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\shemats\sh2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\splash_logo.png" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties XamarinHotReloadWrongLinkerErrorInfoBarwhopocketbookAndroidHideInfoBar="True" TriggeredFromHotReload="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

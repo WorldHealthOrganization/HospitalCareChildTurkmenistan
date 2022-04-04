@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="who_pocket_book.Pages.PocketBookPicturesPage">
+    <ContentPage.Content>
+        <ContentView>
+            <ScrollView x:Name="scroll" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <StackLayout x:Name="mainStack" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="5"/>
+            </ScrollView>
+        </ContentView>
+    </ContentPage.Content>
+</ContentPage>

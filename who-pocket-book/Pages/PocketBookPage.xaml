@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="who_pocket_book.Pages.PocketBookPage">
+    <ContentPage.Content>
+        <RelativeLayout>
+            <StackLayout x:Name="someStack" RelativeLayout.XConstraint="0"
+                  RelativeLayout.YConstraint="0"
+                  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
+                <Label HeightRequest="0"/>
+            </StackLayout>
+            <ImageButton
+                  RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-80}"
+                  RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-75}"
+                  RelativeLayout.WidthConstraint="64"
+                  RelativeLayout.HeightConstraint="64"
+                  Source="notes.png"
+                  Clicked="ImageButton_Clicked"
+                  CornerRadius="32"
+                  BackgroundColor="{DynamicResource colorPageTitle}"
+                  Padding="18,14,13,14"/>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

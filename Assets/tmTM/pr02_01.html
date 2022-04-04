@@ -1,0 +1,77 @@
+<html manifest="local.manifest">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>G2.1 caganyň agramynyň (ýaşynyň) ölçemeklik</title>
+  <meta name="viewport" content="initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" type="text/css" href="mres/iphonec.css" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <script type="text/javascript" src="mres/showpic.js"></script>
+  <script language="Javascript" type="text/javascript">
+
+    window.onload = function () {
+      if (localStorage && 'unfrmp21s' in localStorage) {
+        document.getElementById("sizeval").value = localStorage.unfrmp21s;
+        document.getElementById("massval").value = localStorage.unfrmp21m;
+        computeValue();
+      }
+    }
+    function computeValue() {
+      var sizev = document.getElementById("sizeval").value.replace(",", ".");
+      var massv = document.getElementById("massval").value.replace(",", ".");
+      localStorage.unfrmp21s = sizev;
+      localStorage.unfrmp21m = massv;
+      if ((!isNaN(parseFloat(sizev)) && isFinite(sizev)) && (!isNaN(parseFloat(massv)) && isFinite(massv)))
+        document.getElementById("resultval").textContent = Math.round(Math.sqrt((Number(sizev) * Number(massv)) / 3600) * 100) / 100;
+      else document.getElementById("resultval").textContent = "-Näbelli-";
+    }
+    function keypress(e) {
+      if (e.keyCode === 13) { computeValue(); return false }
+    }
+
+  </script>
+</head>
+<body xml:lang="ru-RU" onresize="gotresize();">
+  <div id="bco">
+    <p>Bu bapda ýan kitabynyň dürli baplarynda, bäbekler we çagalar üçin agzalan derman serişdeleriniň möçberleri görkezilen. Ulanmaklygy ýeňilleşdirmek we çylşyrymly sanamak usullaryny ulanmazlyk üçin möçberler çaganyň agramyna laýyklykda berilýar. Hassahana şertlerinde derman serişdeleriniň möçberlerini sanamakda ýüze çykýan ýalňyşlyklar bütün dünýäde köp, şol sebäpli bu hasaplary geçirmekden gaça durmaly. Bu goşundyda 3 kg 29 kg agramdaky çagalar üçin niýetlenen möçberler görkezilen. Birinji 2 aýlyk bäbekler üçin niýetlenen möçberler 3 bapda görkezilen <a href="javascript:location.href='content_3.json'">bap 3</a>.</p>
+    <p>Emma käbir derman serişdeleri üçin çaganyň agramyna laýyklykda HAS TAKYK möçberleri anyklamaklyk gerek bolýar. Bu esasan hem terapewtik netijeliligi gazanmaklyk üçin takyk möçberler gerek bolan derman serişdelerine degişli, mysal üçin, digoksin, hloramfenikol, aminofillin we antiretrowirus serişdeleri.</p>
+    <p>Käbir antiretrowirus serişdeler çaganyň beden üstüne laýyklykdaky möçberlerde berilýär. Aşakdaky jetbelde, dürli agramdaky çagalar üçin beden üstüniň takmynan ölçegleri berilen</p>
+    <p align="center">
+      <img onclick="showpic('img/pr2f1.png',1010,200, '');" src="img/pr2f1.png" width="284" height="64"/>
+      <formula n="1" />
+    </p>
+    <form>
+      <table><tr><td>Boýy (sm):</td><td><input id="sizeval" inputmode="numeric" maxlength="80" min="0" onchange="computeValue();" onkeydown="return keypress(event);" pattern="[0-9]*" size="32" type="number" value="72" /></td></tr><tr><td>Agramy (kg):</td><td><input id="massval" inputmode="numeric" maxlength="80" min="0" onchange="computeValue();" onkeydown="return keypress(event);" pattern="[0-9]*" size="32" type="number" value="10" /></td></tr><tr><td>Beden üsti: </td><td><b><span id="resultval">0.45</span> m2</b></td></tr></table>
+    </form>
+    <p>Şunlykda agramy 10 kg we boýy 72 sm çaganyň beden üsti</p>
+    <p align="center">
+      <script language="javascript">
+        var pwid = 100, phei = 30;
+        if (document.body.clientWidth < 100) {
+          pwid = document.body.clientWidth;
+          phei = pwid * 3 / 10;
+        }
+        document.write("<svg width=\"" + pwid + "\" height=\"" + phei + "\"><image xlink:href=\"img/pr2f2.svg\" width=\"" + pwid + "\" height=\"" + phei + "\"/></svg>");
+      </script>
+      <formula n="2" />
+    </p>
+    <p><b><i>Jetwel G2.1 Çaganyň agramynyň (ýaşynyň) we onuň beden üstüniň derman serişdelerini ölçemeklik üçin ulanylýan gatnaşygy</i></b></p>
+    <div class="table-container">
+      <table>
+        <tr><td class="head bco">Çaganyň ýaşy ýa-da agramy</td><td class="head bco">Beden üsti (m2)</td></tr>
+        <tr><td class="bod">Bäbekler (&gt; 1aý)</td><td class="bod">0,2–0,25</td></tr>
+        <tr><td class="bod">Kiçijik çaga (1–<3 aý)</td><td class="bod">0,25–0,35</td></tr>
+        <tr><td class="bod">5–9 kg</td><td class="bod">0,3–0,45</td></tr>
+        <tr><td class="bod">10–14 kg</td><td class="bod">0,45–0,6</td></tr>
+        <tr><td class="bod">15–19 kg</td><td class="bod">0,6–0,8</td></tr>
+        <tr><td class="bod">20–24 kg</td><td class="bod">0,8–0,9</td></tr>
+        <tr><td class="bod">25–29 kg</td><td class="bod">0,9–1,1</td></tr>
+        <tr><td class="bod">30–39 kg</td><td class="bod">1,1–1,3</td></tr>
+      </table>
+    </div>
+    <p><i>Mysal:</i> Eger maslahat berilýän möçber- 400 mg/m2 iki sapar günüň dowamynda bolsa, onda 15-19 kg çaga üçin maslahat berilýän möçber: (0,6–0,8) x 400 = 244–316 mg iki sapar günüň dowamynda.</p>
+  </div>
+  <script language="Javascript">settextsize();</script>
+</body>
+</html>

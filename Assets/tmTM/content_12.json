@@ -1,0 +1,60 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "12.1 Hassahanadan çykarmagyň senesini bellemek",
+            "childElement": "ch12_01.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "12.2 Maslahat bermek",
+            "childElement": "ch12_02.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 3,
+            "title": "12.3 Iýmitlenme boýunça maslahat bermek",
+            "childElement": "ch12_03.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 4,
+            "title": "12.4 Öý şertlerinde bejergi",
+            "childElement": "ch12_04.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 5,
+            "title": "12.5 Ejesiniň öz saglygyny barlamak",
+            "childElement": "ch12_05.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 6,
+            "title": "12.6 Sanjym statusyny barlamak",
+            "childElement": "ch12_06.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 7,
+            "title": "12.7 Saglygy goraýyşyň ilkinji basgançaklarynda işleýän işgärler bilen arabaglanyşyk ",
+            "childElement": "ch12_07.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 8,
+            "title": "12.8 Dowamly kömegiň berlişi",
+            "childElement": "ch12_08.html",
+            "childElementType": "chapter"
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "title": "Hassahanadan çykarmaklyk hemişe indiki tapgyrlary öz içine almaly:  \n • hassahanadan çykarmaklygyň möhletiniň dogry anyklamak;  \n • ejesine çagany öýde iýmitlendirmek we bejermek boýunça maslahat bermek;  \n • milli sanjym kalendary boýunça çaga hemme gerek bolan sanjymlary etmek we onuň ambulator kartasyna degişli bellikleri bellemek;  \n • çagany hassahana ýollan ýa-da çaga hassahanadan çykandan soň gözegçilik etjek saglygy goraýyş işgäri bilen arabaglanyýyk saklamak;  \n • hassahana dowamly gözegçilik üçin gelmeli sene we haýsy ýagdaýlar ýüze çykanda derrew dolanmaly ýagdaýlar barada ejesine maslahat bermek. \n • maşgalalara ýöriteleşen kömegi bermeklik (mysal üçin, syrkaw çaga maýyplyk barada haty düzetmeklik ýa-da ýerli goldaw toparlary bilen aragatnaýyk saklamaklygy ýola goýmaklyk- AID-AIDS çagalar üçin).",
+            "childElement": null,
+            "childElementType": "html"
+        }
+    ]
+]

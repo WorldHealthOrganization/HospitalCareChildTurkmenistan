@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:who_pocket_book.Models"
+             mc:Ignorable="d"
+             x:Class="who_pocket_book.App">
+    <Application.Resources>
+        <x:String x:Key="child_and_adolescent_health_description">Bu bölümde BSG-nyň Ýewropa sebitindäki agza ýurtlarynyň çagalarynyň we ýetginjekleriniň saglyk ýagdaýy barada iň täze maglumatlar berlen. Bu ýerde berlen maglumatlar "Çagalaryň geljegine edilýän goýumlar: Çagalaryň we ýetginjekleriň saglygyny goramagyň Ýewropa strategiýasy; 2015-2020ý." (SAN strategiýasy) atly resminamada goýulan maksatlara ýetmegiň öňe gidişligini görekzýär. Tablisalardaky we grafiklerdäki boşluklar zerur bolan maglumatlaryň ýetmezçiligi sebäplidir; BSG 2016-njy ýylyň ikinji ýarymynda ýurtlar boýunça maglumatlary ýygnamak arkaly bu boşluklary doldurmaga synanyşar.</x:String>
+        <x:String x:Key="child_and_adolescent_health_title">Çagalaryň we ýetginjekleriň saglygy</x:String>
+        <x:String x:Key="population_and_health_system_title">Ilata we saglygy goraýyş ulgamyna syn</x:String>
+        <x:String x:Key="demographics">Demografiýa</x:String>
+        <x:String x:Key="policies">Syýasat</x:String>
+        <x:String x:Key="health_system">Saglygy goraýyş ulgamy</x:String>
+        <x:String x:Key="health_expenditure">Saglygy goraýyşyň çykdajylary (adam başyna düşýän SAUD, ABŞ-nyň dollary hasabynda)</x:String>
+        <x:String x:Key="data_not_available">Maglumatlar ýok</x:String>
+        <x:String x:Key="infectious_diseases">Ýokanç keseller</x:String>
+        <x:String x:Key="estimated_hiv_rates">AIW ýokanjy bar bolan çagalaryň takmynan sany</x:String>
+        <x:String x:Key="vaccination_coverage">Sanjymlaryň ýerine ýetirilişi (sanjym edilen çagalaryň sany % hasabynda)</x:String>
+        <x:String x:Key="diarrhoea">Içgeçmäni bejermek üçin PRB we wagtly-wagtyna iýmitlenmek, 5 ýaşa çenli çagalar</x:String>
+        <x:String x:Key="tuberculosis">Inçekesel (0-14 ýaş arasy)</x:String>
+
+        <x:String x:Key="all">Ählisi</x:String>
+        <x:String x:Key="female">Zenanlar</x:String>
+        <x:String x:Key="male">Erkekler</x:String>
+
+        <x:String x:Key="MapCAH_3_0_14">Çaga immigrant ilaty (0-14 ýaş aralygy)</x:String>
+        <x:String x:Key="MapCAH_3_15_19">Immigrant ýetginjekler (15-19 ýaş aralygy)</x:String>
+
+        <x:String x:Key="HFA_1">Ýyllyk ortaça ilat sany</x:String>
+        <x:String x:Key="CAH_65">Çaga ýaşdaky ilat (0-14 ýaş arasy)</x:String>
+        <x:String x:Key="HFA_618">Başlangyç mekdebe gatnamaýan çaga sany, % hasabynda</x:String>
+        <x:String x:Key="HFA_61">Her 1000 sany diri dogrum üçin 5 ýaşa çenli bolan ölüm ähtimallygy</x:String>
+        <x:String x:Key="HFA_78">Her 1000 sany diri dogrum üçin irki neonatal ölümçiligi</x:String>
+        <x:String x:Key="HFA_592">20 ýaşdan kiçi bolan diri dogran ýaş eneler, diri dogrumlardan % hasabynda</x:String>
+        <x:String x:Key="HFA_16">1000 ilat sany üçin diri dogrumlar</x:String>
+        <x:String x:Key="CAH_9">Garyplyk we sosial üznüklilik howp toparyna degişli bolan çagalaryň sany, % hasabynda</x:String>
+        <x:String x:Key="CAH_3">Immigrantlaryň umumy sany</x:String>
+        <x:String x:Key="CAH_20">Jenaýat jogapkärçiliginiň iň kiçi ýaşy</x:String>
+        <x:String x:Key="CAH_21">Potensial jenaýat jogapkärçiliginiň ýaş aralygy</x:String>
+        <x:String x:Key="CAH_19">Temmäki çekmegi gadagan edýän milli kanunçylyga goşulan jemgyýetçilik ýerleriniň sany, % hasabynda</x:String>
+        <x:String x:Key="HFA_463">Suw geçiriji ulgamyna birikdirilen öýlerde ýaşaýan ilat sany, % hasabynda</x:String>
+        <x:String x:Key="HFA_466">Lagym geçirijiniň, zyýansyzladyryjylaryň we beýleki zibil ýok etmek serişdeleriniň elýeter bolan ilat sany, % hasabynda</x:String>
+        <x:String x:Key="HFA_33">Adam başyna düşýän jemi içerki önüm, ABŞ-nyň dollary hasabynda</x:String>
+        <x:String x:Key="HFA_570">Saglygy goraýyşyň umumy çykdajylary, adam başyna düşýän SAUD, ABŞ-nyň dollary hasabynda</x:String>
+        <x:String x:Key="HFA_583">Döwlet pudagynyň saglygy goraýyşa edýän çykdajylary, saglygy goraýyşa edilýän umumy çykdajylardan % hasabynda</x:String>
+        <x:String x:Key="HFA_584">Nagt pulda edilýän hususy saglygy goraýyş çykdajylary, saglygy goraýyşa edilýän umumy çykdajylardan % hasabynda</x:String>
+        <x:String x:Key="CAH_15">Her 100 000 ilata umumy lukmanlar</x:String>
+        <x:String x:Key="CAH_16">Her 100 000 ilata çaga lukmanlary</x:String>
+        <x:String x:Key="CAH_17">Her 100 000 ilata zähmet çekýän şepagat uýalary</x:String>
+        <x:String x:Key="CAH_46">Çagalaryň arasynda AIW ýokanjynyň çak edilýän derejesi (her 10 000 adama)</x:String>
+        <x:String x:Key="CAH_47">Ýetginjekleriň arasynda AIW ýokanjynyň görkezijileri (15-24 ýaş aralygy), ýaýranlygy % hasabynda</x:String>
+        <x:String x:Key="HFA_606">Difteriýa garşy sanjym edilen emýän çagalaryň sany, % hasabynda</x:String>
+        <x:String x:Key="HFA_609">Gyzamyga garşy immunizasiýa edilen çagalaryň sany, % hasabynda</x:String>
+        <x:String x:Key="HFA_611">b gemofiliýasyna garşy immunizasiýa edilen emýän çagalaryň sany, % hasabynda</x:String>
+        <x:String x:Key="CAH_31">PCV sanjymynyň ýerine ýetirilişi</x:String>
+        <x:String x:Key="CAH_63">HPV sanjymynyň ýerine ýetirilişi</x:String>
+        <x:String x:Key="CAH_32">Rotawirus ýokanjyna garşy sanjymlaryň ýerine ýetirilişi</x:String>
+
+        <x:String x:Key="value">Bahasy (elýeter iň täze ýyl)</x:String>
+        <x:String x:Key="year">Ýyly</x:String>
+        <x:String x:Key="title">Çagalara stasionar kömegi, Türkmenistan</x:String>
+        <x:String x:Key="statistics">Statistika</x:String>
+        <x:String x:Key="pocketBook">Maglumathana</x:String>
+        <x:String x:Key="notes">Bellikler</x:String>
+        <x:String x:Key="contactInfo">Habarlaşmak üçin maglumatlar</x:String>
+        <x:String x:Key="pickFromGallery">Surat gorundan (Galereýadan) saýlaň</x:String>
+        <x:String x:Key="pickFromCamera">Surata düşüriň</x:String>
+         <x:String x:Key="showPhotos">Belliklere geçiň</x:String>
+         <x:String x:Key="photoAdded">Surat üstünlikli goşuldy</x:String>
+         <x:String x:Key="addPhoto">Surat goşmak</x:String>
+        <x:String x:Key="missingCameraPermission">Kamerany ulanmak üçin rugsat ýok</x:String>
+        <x:String x:Key="missingGalleryPermission">Kamerany ulanmak üçin rugsat ýok</x:String>
+        <x:String x:Key="bookNavTitle">Çagalara stasionar kömegi</x:String>
+         <x:String x:Key="back">Yzyna</x:String>
+         <x:String x:Key="cancel">Ýatyrmaly</x:String>
+         <x:String x:Key="save">Ýatda saklamaly</x:String>
+         <x:String x:Key="notePlaceholder">Belligi giriziň</x:String>
+         <x:String x:Key="delete">Pozmaly</x:String>
+         <x:String x:Key="yes">Hawa</x:String>
+         <x:String x:Key="no">Ýok</x:String>
+         <x:String x:Key="deleteConfirm">Siz suraty dogrudan hem pozmak isleýäňizmi? Ony gaýtdan dikeldip bolmaz</x:String>
+
+        <Color x:Key="colorPageTitle">#4f81c7</Color>
+    </Application.Resources>
+</Application>

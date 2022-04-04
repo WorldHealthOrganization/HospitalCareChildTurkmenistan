@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:pages="clr-namespace:who_pocket_book.Pages"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    NavigationPage.HasNavigationBar="False"
+    Title="{DynamicResource title}"
+    ios:Page.UseSafeArea="true"
+    android:TabbedPage.ToolbarPlacement="Bottom"
+    android:TabbedPage.IsSmoothScrollEnabled="False"
+    android:TabbedPage.IsSwipePagingEnabled="False"
+    x:Name="MainPageTabBar"
+    x:Class="who_pocket_book.Pages.MainPage">
+    <NavigationPage x:Name="ContainerPage"
+        Title="{DynamicResource pocketBook}"
+        IconImageSource="ic_book.png">
+        <x:Arguments>
+            <pages:PocketBookContentPage />
+        </x:Arguments>
+        <NavigationPage.ToolbarItems>
+            <ToolbarItem Icon="image.png" Clicked="ImageButton_Clicked" />
+            <ToolbarItem Icon="magnifying_glass.png" Clicked="ToolbarItem_Clicked" />
+        </NavigationPage.ToolbarItems>
+    </NavigationPage>
+    <NavigationPage
+        Title="{DynamicResource statistics}"
+        IconImageSource="ic_country.png">
+        <x:Arguments>
+            <pages:CountryProfilePage
+        Title="{DynamicResource statistics}"
+        IconImageSource="ic_country.png"/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage
+        Title="{DynamicResource infectious_diseases}"
+        IconImageSource="ic_infection.png">
+        <x:Arguments>
+            <pages:InfectiousDiseasesPage
+        Title="{DynamicResource infectious_diseases}"
+        IconImageSource="ic_infection.png"/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage
+        Title="{DynamicResource notes}"
+        IconImageSource="image.png">
+        <x:Arguments>
+            <pages:PocketBookPicturesPage
+        Title="{DynamicResource notes}"
+                IconImageSource="image.png"/>
+        </x:Arguments>
+    </NavigationPage>
+    <NavigationPage
+        Title="{DynamicResource contactInfo}"
+        IconImageSource="ic_info.png">
+        <x:Arguments>
+            <pages:AboutPage
+        Title="{DynamicResource contactInfo}"
+        IconImageSource="ic_info.png"/>
+        </x:Arguments>
+    </NavigationPage>
+</TabbedPage>

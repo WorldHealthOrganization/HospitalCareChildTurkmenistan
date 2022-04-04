@@ -1,0 +1,104 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "3.1 Sagdyn bäbegiň bolandan soň ilkinji esasy idegi",
+            "childElement": "ch03_01.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "3.2 Bäbegiň reanimasiýasy",
+            "childElement": "ch03_02.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 3,
+            "title": "3.3 Bäbegiň adaty idegi",
+            "childElement": "ch03_03.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 4,
+            "title": "3.4 Neonatal ýokançlyklaryň öňüniň alnyşy",
+            "childElement": "ch03_04.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 5,
+            "title": "3.5 Gipoksiki-işemiki ensefalopatiýaly bäbegiň alnyp barlyşy",
+            "childElement": "ch03_05.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 6,
+            "title": "3.6 Bäbeklerde we iki aýa çenli çagalarda howply alamatlar",
+            "childElement": "ch03_06.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 7,
+            "title": "3.7 Tutgaý",
+            "childElement": "ch03_07.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 8,
+            "title": "3.8 Agyr bakterial ýokanjy",
+            "childElement": "ch03_08.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 9,
+            "title": "3.9 Meningit",
+            "childElement": "ch03_09.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 10,
+            "title": "3.10 Näsag bäbegiň goldaýjy idegi",
+            "childElement": "ch03_10.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 11,
+            "title": "3.11 Wagtyndan öň bolan we Pes agram bilen dogulan bäbekler",
+            "childElement": "ch03_11.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 12,
+            "title": "3.12 Bäbeklere mahsus beýleki kynçylyklar",
+            "childElement": "ch03_12.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 13,
+            "title": "3.13 Ejelerinde dowamly ýokançlyklary bolan bäbekler",
+            "childElement": "ch03_13.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 14,
+            "title": "3.14 Pes agramly bäbeklerde ulanylýan esasy derman serişdeleriniň möçberleri",
+            "childElement": "ch03_14.html",
+            "childElementType": "chapter"
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "title": "Nusga 12. Bäbekleriň reanimasiýasy: geçirilmeli çäreleriň algoritmi",
+            "childElement": "sh12.html",
+            "childElementType": "chapter"
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "title": "Bu bapda sagdyn bäbekleriň esasy idegi boýunça, şeýle-de kiçi ýaşly dürli keselli bäbekleriň (dogulandan 2 aýa çenli) alnyp barlyşy barada maslahatlar beýan edilen. Bu bapda bäbekleriň reanimasiýasy, neonatal sepsisiň we beýleki bakterial ýokançlyklaryň anyklanyşy we bejerilişi, şeýlede wagtyndan öň we pes agramda dogulan bäbekleriň alnyp barlyşy görkezilýär. Babyň soňunda bäbeklerde we 2 aýa çenli çagalarda ulanylýan esasy derman serişdeleriniň tablisasy getirilen. Bu tablisalarda şeýle-de pes agramda dogulan we wagtyndan öň bolan çagalar üçin möçberler görkezilen.",
+            "childElement": null,
+            "childElementType": "html"
+        }
+    ]
+]

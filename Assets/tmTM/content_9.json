@@ -1,0 +1,42 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "9.1 Hirurgiki emler geçirilýän wagtyndan öň we soň geçirilýän saglygy goraýyş kömegi",
+            "childElement": "ch09_01.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "9.2 Bäbeklik döwrüniň kynçylyklary-doga anomaliýalar",
+            "childElement": "ch09_02.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 3,
+            "title": "9.3 Şikesler",
+            "childElement": "ch09_03.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 4,
+            "title": "9.4 Garyn boşlugynyň kynçylyklary",
+            "childElement": "ch09_04.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 5,
+            "title": "9.5 Hirurgiki kömegi talap edýän ýokançlyklar",
+            "childElement": "ch09_05.html",
+            "childElementType": "chapter"
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "title": "Çagalarda hirurgiki kömek gerek bolan dürli keseller döremegi mümkin. Bäbeklerde hirurgiki bejergi geçirmekligiň öz nukdaýnazarlary bar. Bu bapda çagalarda köp ýaýran kynçylyklarda kömek bermegiň esasy maslahatlary gysgaldylan görnüşde beýan edilen. Çagalara hirurgiki we anesteziologiýa kömeginiň berlişi barada has giňizleýin BSGG-yň “Hassahanada hirurgiýa kömeginiň berlişi” gollanmasynda ýa-da esasy hirurgiki keselleriň we gaýragoýulmasyz ýagdaýlaryň integrirlenip alnyp barlyşy kompakt diskinde tapyp bolar.",
+            "childElement": null,
+            "childElementType": "html"
+        }
+    ]
+]

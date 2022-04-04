@@ -1,0 +1,46 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "7.1 Iýmitlendirmäniň agyr bozulmalary",
+            "childElement": "ch07_01.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "7.2 Agyr iýmitlendirmäniň bozulmalary bilen çaganyň ýagdaýyna ilkinji sapar baha bermeklik",
+            "childElement": "ch07_02.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 3,
+            "title": "7.3 Kömek bermekligi gurnamaklyk",
+            "childElement": "ch07_03.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 4,
+            "title": "7.4 Umumy bejergi",
+            "childElement": "ch07_04.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 5,
+            "title": "7.5 Ugurdaş bozulmalaryň bejergisi",
+            "childElement": "ch07_05.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 6,
+            "title": "7.6 Hassahanadan çykarmaklyk we dowamly gözegçilik",
+            "childElement": "ch07_06.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 7,
+            "title": "7.7 Saglygy goraýyş kömeginiň hiliniň hasabaty",
+            "childElement": "ch07_07.html",
+            "childElementType": "chapter"
+        }
+    ]
+]

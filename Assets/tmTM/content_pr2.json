@@ -1,0 +1,28 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "G2.1 Caganyň agramynyň (ýaşynyň) ölçemeklik",
+            "childElement": "pr02_01.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "G2.2 Dermanlaryň dozasy ",
+            "childElement": "pr02_02.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 3,
+            "title": "G2.3 Inçekesele garşy dermanlar",
+            "childElement": "pr02_03.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 4,
+            "title": "G2.4 Antiretrowiru (ARW) serişdeler",
+            "childElement": "pr02_04.html",
+            "childElementType": "chapter"
+        }
+    ]
+]

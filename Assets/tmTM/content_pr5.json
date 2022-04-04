@@ -1,0 +1,16 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "G5.1 Agram/ýaş görkezijiniň anyklanylyşy",
+            "childElement": "pr05_01.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "G5.2 Agram/boýuň uzynlygy ýa-da agram/boý görkezijiniň anyklanylyşy",
+            "childElement": "pr05_02.html",
+            "childElementType": "chapter"
+        }
+    ]
+]

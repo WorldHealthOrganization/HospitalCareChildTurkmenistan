@@ -1,0 +1,1272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28EE01AC-0D05-4210-A301-568B68C23366}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>who_pocket_book.iOS</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>who-pocket-book.iOS</AssemblyName>
+    <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
+    <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
+    <ProvisioningType>manual</ProvisioningType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>x86_64</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignKey>Apple Development: AppStore Bot (687GD962QA)</CodesignKey>
+    <CodesignProvision>match Development org.who.PBTKMIOS</CodesignProvision>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchLink>Full</MtouchLink>
+    <MtouchArch>x86_64</MtouchArch>
+    <CodesignProvision>match AppStore org.who.PBTKMIOS</CodesignProvision>
+    <CodesignKey>Apple Distribution: World Health Organization (YJDF2LWD3T)</CodesignKey>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>Apple Development: AppStore Bot (687GD962QA)</CodesignKey>
+    <CodesignProvision>match Development org.who.PBTKMIOS</CodesignProvision>
+    <MtouchDebug>true</MtouchDebug>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
+    <MtouchLink>None</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>ARM64</MtouchArch>
+    <CodesignKey>Apple Distribution: World Health Organization (YJDF2LWD3T)</CodesignKey>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>match AppStore org.who.PBTKMIOS</CodesignProvision>
+    <BuildIpa>true</BuildIpa>
+    <ConsolePause>true</ConsolePause>
+    <MtouchUseLlvm>true</MtouchUseLlvm>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchExtraArgs>--optimize=experimental-xforms-product-type</MtouchExtraArgs>
+    <IpaIncludeArtwork>false</IpaIncludeArtwork>
+    <IpaPackageName>TMtm</IpaPackageName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Default' ">
+    <AppExtensionDebugBundleId />
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="FileManager.cs" />
+    <Compile Include="Helpers\AlertSheetHelper.cs" />
+    <Compile Include="Helpers\ImageResizer.cs" />
+    <Compile Include="Helpers\JsonReaderHelper.cs" />
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="Renderers\CustomerEditorRenderer.cs" />
+    <Compile Include="Renderers\CustomListViewCellRenderer.cs" />
+    <Compile Include="Renderers\CustomSearchBarRenderer.cs" />
+    <Compile Include="Renderers\HybridWebViewRenderer.cs" />
+    <Compile Include="Renderers\PocketBookImagePageRenderer.cs" />
+    <None Include="Entitlements.plist" />
+    <None Include="Info.plist" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <BundleResource Include="Resources\WHO-emblem-RUS-blue.png" />
+    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\assets\about" />
+    <BundleResource Include="Resources\assets\content_1.json" />
+    <BundleResource Include="Resources\assets\content_2.json" />
+    <BundleResource Include="Resources\assets\content_3.json" />
+    <BundleResource Include="Resources\assets\content_4.json" />
+    <BundleResource Include="Resources\assets\content_5.json" />
+    <BundleResource Include="Resources\assets\content_6.json" />
+    <BundleResource Include="Resources\assets\content_7.json" />
+    <BundleResource Include="Resources\assets\content_8.json" />
+    <BundleResource Include="Resources\assets\content_9.json" />
+    <BundleResource Include="Resources\assets\content_10.json" />
+    <BundleResource Include="Resources\assets\content_11.json" />
+    <BundleResource Include="Resources\assets\content_12.json" />
+    <BundleResource Include="Resources\assets\content_pr1.json" />
+    <BundleResource Include="Resources\assets\content_pr2.json" />
+    <BundleResource Include="Resources\assets\content_pr4.json" />
+    <BundleResource Include="Resources\assets\content_pr5.json" />
+    <BundleResource Include="Resources\assets\filesTitles.json" />
+    <BundleResource Include="Resources\assets\fileTitles.json" />
+    <BundleResource Include="Resources\assets\intro_content.json" />
+    <BundleResource Include="Resources\assets\main_content.json" />
+    <BundleResource Include="Resources\assets\search.json" />
+    <BundleResource Include="Resources\who-emblem.png" />
+    <BundleResource Include="Resources\apple-touch-icon.png" />
+    <BundleResource Include="Resources\assets\.DS_Store" />
+    <BundleResource Include="Resources\assets\img\.DS_Store" />
+    <BundleResource Include="Resources\assets\mres\.DS_Store" />
+    <BundleResource Include="Resources\assets\shemats\.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\ic_launcher_foreground.v1.v1.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon180.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon167.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon152.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon120.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon87.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon80.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon76.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon60.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon58.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon40.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon29.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon20.png">
+      <Visible>false</Visible>
+    </ImageAsset>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AppCenter">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Analytics">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AppCenter.Crashes">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Realm">
+      <Version>10.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>5.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\who-pocket-book\who-pocket-book.csproj">
+      <Project>{3d80231e-f344-42c6-a9ea-ca30b72eff0a}</Project>
+      <Name>who-pocket-book</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_info%403x.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <PropertyGroup>
+    <BuildDependsOn>
+      AndroidAssets;$(BuildDependsOn)
+    </BuildDependsOn>
+  </PropertyGroup>
+  <Target Name="AndroidAssets" />
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_info%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_book%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_book%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_country%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_country%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_country.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_infection%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_infection%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_infection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_collapsed%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_collapsed%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_collapsed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_expanded%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_expanded%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_expanded.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\magnifying_glass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\magnifying_glass%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\magnifying_glass%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\image%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\image%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_expandedb%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_expandedt%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_expandedb%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_expandedt%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_expandedb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\ic_expandedt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\notes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch03p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch03p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch03p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch03p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch04p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch04p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch04p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch04p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch04p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch04p06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch04p07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch04p08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch04p09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch04p10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch04p11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch04p12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch05p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch05p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch05p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch06p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch06p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch06p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch06p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch06p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch06p06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch06p07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch06p08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch06p09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch07p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch07p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch07p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch08p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch08p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch09p21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch9f1n.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch10p19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr01p17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr2f1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr2f1n.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr2f2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr04p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh03p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh03p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh03p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh03p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh04p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh04p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh04p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh04p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh04p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh05p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh05p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh06p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh06p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh12p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh12p02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh12p03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh12p04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh12p05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh12p06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\sh16p01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\iphonec.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\panzoom.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\showpic.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c4.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c5.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c6.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c7.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c8.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c9.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c10.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c11.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_c12.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\back_button_clicked.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\bsq.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\bsqs.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\buls.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c4.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c5.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c6.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c7.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c8.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c9.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c10.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c11.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_c12.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\button_clicked.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\dashs.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\msq.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\msqs.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\mtr.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\mtrs.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\mres\images\vid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\shemats\graphBoys.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\shemats\graphGirls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\shemats\sh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\shemats\sh2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\shemats\sh2_a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\shemats\sh2_b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\shemats\sh2_c.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\shemats\sh12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\shemats\sh13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\shemats\Table74.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\apple-touch-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\bib.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch01__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch01_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch01_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch01_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch01_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch01_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch01_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch01_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch01_08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch01_09.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch01_10.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch02__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch02_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch02_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch02_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch02_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch02_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_09.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_10.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_11.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_12.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_13.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch03_14.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch04__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch04_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch04_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch04_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch04_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch04_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch04_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch04_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch04_08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch04_09.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch05__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch05_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch05_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch05_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch05_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch06__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch06_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch06_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch06_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch06_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch06_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch06_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch06_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch06_08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch06_09.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch06_10.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch06_11.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch07__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch07_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch07_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch07_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch07_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch07_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch07_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch07_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch08__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch08_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch08_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch08_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch08_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch08_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch08_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch08_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch09__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch09_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch09_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch09_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch09_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch09_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch10__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch10_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch10_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch10_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch10_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch10_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch10_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch10_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch10_08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch11__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch11_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch11_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch11_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch12__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch12_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch12_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch12_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch12_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch12_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch12_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch12_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ch12_08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\in_1.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\in_2.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\in_3.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\in_4.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\ind.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\intro.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr01__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr01_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr01_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr01_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr01_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr01_05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr01_06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr01_07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr02__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr02_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr02_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr02_03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr02_04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr03__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr04__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr04_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr05__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr05_01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr05_02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\pr06__index.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\search.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\settings.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh01.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh02.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh03.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh04.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh05.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh06.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh07.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh08.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh09.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh10.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh11.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh12.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh13.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh14.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh15.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\sh16.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\ch9f1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr2f1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\assets\img\pr2f1.jpg" />
+  </ItemGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties TriggeredFromHotReload="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

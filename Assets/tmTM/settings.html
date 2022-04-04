@@ -1,0 +1,53 @@
+<html manifest="local.manifest">
+<head>
+	<meta charset="UTF-8"/>
+	<meta content="yes" name="apple-mobile-web-app-capable"/>
+	<title>Sazlamalar</title>
+	<meta content="initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0" name="viewport"/>
+	<meta content="telephone=no" name="format-detection"/>
+	<link href="mres/iphonec.css" rel="stylesheet" type="text/css"/>
+	<link href="apple-touch-icon.png" rel="apple-touch-icon"/>
+	<script language="Javascript">
+function choosetextsize(s)
+{
+	document.getElementById("bu10").className = "arrow";
+	document.getElementById("bu12").className = "arrow";
+	document.getElementById("bu14").className = "arrow";
+	document.getElementById("bu17").className = "arrow";
+	document.getElementById("bu20").className = "arrow";
+	localStorage.untsstr = s;
+	if(s == "10px") document.getElementById("bu10").className = "selected";
+	else if(s == "12px") document.getElementById("bu12").className = "selected";
+	else if(s == "14px") document.getElementById("bu14").className = "selected";
+	else if(s == "17px") document.getElementById("bu17").className = "selected";
+	else if(s == "20px") document.getElementById("bu20").className = "selected";
+}
+window.onload = function()
+{
+	if (localStorage && 'untsstr' in localStorage)
+	{
+		var s = localStorage.untsstr;
+		if(s == "10px") document.getElementById("bu10").className = "selected";
+		else if(s == "12px") document.getElementById("bu12").className = "selected";
+		else if(s == "14px") document.getElementById("bu14").className = "selected";
+		else if(s == "17px") document.getElementById("bu17").className = "selected";
+		else if(s == "20px") document.getElementById("bu20").className = "selected";
+	}
+	else
+	{
+		document.getElementById("bu14").className = "selected";
+	}
+}
+</script>
+</head>
+<body xml:lang="ru-RU" onresize="location.reload(true);">
+<ul class="edgetoedge">
+<li class="arrow" id="bu10"><a href="javascript:choosetextsize('10px');">Gaty kiçi şrift (10)</a></li>
+<li class="arrow" id="bu12"><a href="javascript:choosetextsize('12px');">Kiçi şrift (12)</a></li>
+<li class="arrow" id="bu14"><a href="javascript:choosetextsize('14px');">Adaty şrift (14)</a></li>
+<li class="arrow" id="bu17"><a href="javascript:choosetextsize('17px');">Uly şrift (17)</a></li>
+<li class="arrow" id="bu20"><a href="javascript:choosetextsize('20px');">Örän uly şrift (20)</a></li>
+</ul>
+<script language="Javascript">settextsize();</script>
+</body>
+</html>

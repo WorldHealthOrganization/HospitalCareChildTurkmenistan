@@ -1,0 +1,238 @@
+[
+  [
+   {
+    "id": 1,
+    "title": "Mazmuny",
+    "childElement": "intro_content.json",
+    "childElementType": "content"
+   }
+  ],
+  [
+   {
+    "id": 1,
+    "title": "1. SORTLAMA WE GAÝRAGOÝULMASYZ ÝAGDAÝLAR",
+    "childElement": "content_1.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 2,
+    "title": "2. NÄSAG ÇAGA BOLAN DIAGNOSTIKI ÝAKYNLAŞMA",
+    "childElement": "content_2.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 3,
+    "title": "3. BÄBEKLERIŇ WE IKI AÝA ÇENLI ÇAGALARYŇ KYNÇYLYKLARY",
+    "childElement": "content_3.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 4,
+    "title": "4. ÜSGÜLEWIK WE KYNLAŞAN DEM ALYŞ",
+    "childElement": "content_4.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 5,
+    "title": "5. IÇGEÇME",
+    "childElement": "content_5.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 6,
+    "title": "6. GYZDYRMAK",
+    "childElement": "content_6.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 7,
+    "title": "7. AGYR IÝMITLENDIRMÄNIŇ BOZULMALARY",
+    "childElement": "content_7.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 8,
+    "title": "8. AID/AIDS-ly ÇAGALAR",
+    "childElement": "content_8.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 9,
+    "title": "9. ÝAÝRAN HIRURGIKI KYNÇYLYKLAR",
+    "childElement": "content_9.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 10,
+    "title": "10. GOLDAÝJY IDEG",
+    "childElement": "content_10.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 11,
+    "title": "11. ÇAGANYŇ ÝAGDAÝYNA TAPGYRLAÝYN GÖZEGÇILIK ETMEK",
+    "childElement": "content_11.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 12,
+    "title": "12. MASLAHAT BERMEK WE HASSAHANADAN ÇYKARMAK",
+    "childElement": "content_12.json",
+    "childElementType": "content"
+   }
+  ],
+  [
+   {
+    "id": 1,
+    "title": "Goşundy 1. Anyklaýyş we bejeriş emler",
+    "childElement": "content_pr1.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 2,
+    "title": "Goşundy 2. Derman serişdeleriniň möçberleri we berliş nusgalary",
+    "childElement": "content_pr2.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 3,
+    "title": "Goşundy 3. Çagalar üçin ulanylýan abzallaryň ölçegleri",
+    "childElement": "pr03__index.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 4,
+    "title": "Goşundy 4. Infuzion erginler",
+    "childElement": "content_pr4.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 5,
+    "title": "Goşundy 5. Iýmit statusyna baha bermek",
+    "childElement": "content_pr5.json",
+    "childElementType": "content"
+   },
+   {
+    "id": 6,
+    "title": "Goşundy 6. Hasabat we görkezme nusgalary",
+    "childElement": "pr06__index.html",
+    "childElementType": "chapter"
+   }
+  ],
+  [
+   {
+    "id": 1,
+    "title": "Nusga 1. Çagalary hassahanada alyp barmaklygyň tapgyrlary: esasy pursatlar",
+    "childElement": "sh01.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 2,
+    "title": "Nusga 2. Hemme düşýän çagalary sortlamak",
+    "childElement": "sh02.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 3,
+    "title": "Nusga 3. Del jisimiň aspirasiýasynda bäbege we 1 ýaşdan uly çaga kömegiň berlişi",
+    "childElement": "sh03.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 4,
+    "title": "Nusga 4. Dem alyşyň obstruktiw bozulmalarynda dem alyş ýollarynyň geçirijiligini nädip goldamak (ýa-da ýaňy dem alyşyň durmagy bolup geçen)",
+    "childElement": "sh04.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 5,
+    "title": "Nusga 5. Kislorody nädip bermeli",
+    "childElement": "sh05.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 6,
+    "title": "Nusga 6. Huşsyz çagany nädip ýatyrmaly",
+    "childElement": "sh06.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 7,
+    "title": "Nusga 7. Agyr iýmitlendirmäniň bozulmalary bolmadyk we Şok ýagdaýyndaky çaga damardan suwuklyklary nähili çaltlykda goýbermeli",
+    "childElement": "sh07.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 8,
+    "title": "Nusga 8. Agyr iýmitlendirmäniň bozulmalary bolan we şok ýagdaýyndaky çaga suwuklyklary nähili çaltlykda goýbermeli",
+    "childElement": "sh08.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 9,
+    "title": "Nusga 9. Diazepamy (ýa-da paraldegidi) rektal nädip goýmaly",
+    "childElement": "sh09.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 10,
+    "title": "Nusga 10. Glýukozany damardan nädip boýbermeli",
+    "childElement": "sh10.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 11,
+    "title": "Nusga 11. Şoga garşy kömegi berilenden soňra agyr suwsyzlykda gaýra goýulmasyz kömegiň berlişi",
+    "childElement": "sh11.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 12,
+    "title": "Nusga 12. Bäbekleriň reanimasiýasy: geçirilmeli çäreleriň algoritmi",
+    "childElement": "sh12.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 13,
+    "title": "Nusga 13. W-meýilmana içgeçme bejerilende: Agyr suwsyzlykda kömegiň berlişi",
+    "childElement": "sh13.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 14,
+    "title": "Nusga 14. B-meýilnama içgeçme bejerilende: Aram suwsyzlygyň ORS kömegi bilen bejerilişi",
+    "childElement": "sh14.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 15,
+    "title": "Nusga 15. A-meýilnama içgeçme bejerilende: Içgeçmäniň öý şertlerinde bejergisi",
+    "childElement": "sh15.html",
+    "childElementType": "chapter"
+   },
+   {
+    "id": 16,
+    "title": "Nusga 16. Näsag we sagdyn çaganyň iýmitlenişi baradaky maslahatlar",
+    "childElement": "sh16.html",
+    "childElementType": "chapter"
+   }
+   
+  ],
+  [
+   {
+    "id": 1,
+    "title": "GOŞMAÇA EDEBIÝATLAR",
+    "childElement": "bib.html",
+    "childElementType": "chapter"
+   }
+  ],
+  [
+   {
+    "id": 1,
+    "title": "Sazlamalar",
+    "childElement": "settings.html",
+    "childElementType": "chapter"
+   }
+  ]
+ ]
+ 

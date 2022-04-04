@@ -1,0 +1,22 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "11.1 Gözegçiligiň ugurlary",
+            "childElement": "ch11_01.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "11.2 Näsag çaga seretmekligiň kartasy",
+            "childElement": "ch11_02.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 3,
+            "title": "11.3 Pediatriýa kömegini berlişiniň hil gözegçiligi",
+            "childElement": "ch11_03.html",
+            "childElementType": "chapter"
+        }
+    ]
+]

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="who_pocket_book.Pages.PocketBookContentPage"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core">
+    <ContentPage.Content>
+        <RelativeLayout>
+            <ListView x:Name="GroupedView"
+                  BackgroundColor="LightGray"
+                  SelectionMode="None"
+                  SeparatorVisibility="None"
+                  ItemTapped="GroupedView_ItemTapped"
+                  IsGroupingEnabled="true"
+                  HasUnevenRows="True"
+                  RowHeight="45"
+                  ios:ListView.GroupHeaderStyle="Grouped"
+                  RelativeLayout.XConstraint="0"
+                  RelativeLayout.YConstraint="0"
+                  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame BackgroundColor="White" BorderColor="Black" Padding="0" HasShadow="False">
+                                <Frame.Margin>
+                                    <OnPlatform x:TypeArguments="Thickness" iOS="10,0,10,0" Android="10,2,10,2"/>
+                                </Frame.Margin>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Title}" FontSize="14" TextColor="Black" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" HorizontalOptions="FillAndExpand">
+                                        <Label.Margin>
+                                            <OnPlatform x:TypeArguments="Thickness" iOS="5,0,5,0" Android="5,3,5,3"/>
+                                        </Label.Margin>
+                                    </Label>
+                                    <Label Text="" BackgroundColor="Transparent" HorizontalOptions="End" WidthRequest="1">
+                                        <Label.HeightRequest>
+                                            <OnPlatform x:TypeArguments="x:Double" iOS="0" Android="37"/>
+                                        </Label.HeightRequest>
+                                    </Label>
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+                <ListView.GroupHeaderTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Label BackgroundColor="LightGray"/>
+                            <ViewCell.Height>
+                                <OnPlatform x:TypeArguments="x:Double" iOS="1" Android="10"/>
+                            </ViewCell.Height>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.GroupHeaderTemplate>
+                <ListView.Header>
+                    <Label BackgroundColor="LightGray" Text="" HeightRequest="10" MinimumHeightRequest="10"/>
+                </ListView.Header>
+                <ListView.Footer>
+                    <StackLayout Padding="0,0,0,70">
+                        <Label x:Name="htmlLabel" Text="" TextColor="White"/>
+                    </StackLayout>
+                </ListView.Footer>
+            </ListView>
+            <ImageButton
+                  RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-80}"
+                  RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=1, Constant=-75}"
+                  RelativeLayout.WidthConstraint="64"
+                  RelativeLayout.HeightConstraint="64"
+                  Source="notes.png"
+                  Clicked="ImageButton_Clicked"
+                  CornerRadius="32"
+                  BackgroundColor="{DynamicResource colorPageTitle}"
+                  Padding="17,13,12,13"/>
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

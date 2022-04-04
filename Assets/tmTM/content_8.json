@@ -1,0 +1,54 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "8.1 AIW ýokanjy guman edilýän ýa-da tassyklanan çaga",
+            "childElement": "ch08_01.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "8.2 Antiretrowirus bejergi (RB)",
+            "childElement": "ch08_02.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 3,
+            "title": "8.3 AIW-ýokançly çagalarda goldaýjy bejergi",
+            "childElement": "ch08_03.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 4,
+            "title": "8.4 AIW bilen bagly bolan patologik ýagdaýlaryň bejergisi",
+            "childElement": "ch08_04.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 5,
+            "title": "8.5 AIW ýokanjyň geçişiniň öňüni almak we ene süýdi bilen emdirmeklik",
+            "childElement": "ch08_05.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 6,
+            "title": "8.6 Dowamly gözegçilik",
+            "childElement": "ch08_06.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 7,
+            "title": "8.7 Palliatiw bejergi we keseliň terminal ýagdaýynda kömek bermek",
+            "childElement": "ch08_07.html",
+            "childElementType": "chapter"
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "title": "AIW-ýokançly çagalarda köp patologik ýagdaýlaryny alyp barlamklyk beýleki çagalaryň alnyp barlyşy ýaly geçirilýär (bap 3-7 seret). Köp ýokançlyklar AIW-ýopkançly çagalarda AIW-ýokanjy bolmadyk çagalardaky döredijiler döredýärler, ýöne bu ýokançlyklar AIW-ýokançly çagalarda has agyr geçýär we ýygy-ýygydan gaýtalanyp bilýärler. Emma käbir keseller bolsa, adaty däl döredijiler taparyndan döreýärler. AIW-ýokançly çagalaryň köpüsi çagalaryň arasynda giňden ýaýran kesellerden ýogalýarlar. Emma bu ölüm ýagdaýlarynyň köpüsiniň, çagalary dogry bejermekligiň, dogry öňüni alyş sanjymlaryny geçirmeklik we dogry iýmitlernmäni düzmek bilen öňüni alyp bolýar. Bu çagalarda stafilikokk we pnewmokokk ýokançlyklary we inçe kesel bilen keselleme howpy ýokarydyr. Bu çagalaryň ömürlerini halas etmeklik keseli irki wagtda anyklamakdan, öz wagtynda antiretrowirus bejergini geçirmekden we Kotrimaksazol bilen öňüni alyş çarelerini geçirmekden ybaratdyr. Hemme bäbeklerde we çagalarda saglygy goraýyş edarasyna ilkinji sapar ýüzlenende AIW–statusy anyklanmalydyr, iň gowysy dogulandan soň ilkinji günler. Bu meseläni ýeňilleşdirmek üçin hemme çagalara kömek edilýän bölümlerde bu çagalara AIW testirlemäni geçmegi hödürlemeli. Bu bapda AIW/AIDS çagalary alyp barmaklygyň indiki bölekleri görkezilýär: AIW ýokanjynyň anyklanylyşy, maslahat berme we testirleme, keseliň amaly tapgyrlary, antiretrowurus bejergi, AIW-ýokanjy bilen bagly bolan patologik ýagdaýlaryň anyklanylyşy we bejergisi; goldaýjy ideg; göwüs süýdi bilen emdirmeklik; hassahanadan çykarmaklyk we dowamly gözegçilik; palliatiw bejergi we keseliň terminal ýagdaýyndaky kömek.",
+            "childElement": null,
+            "childElementType": "html"
+        }
+    ]
+]

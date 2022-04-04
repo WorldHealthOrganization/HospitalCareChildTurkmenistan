@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:microcharts="clr-namespace:Microcharts.Forms;assembly=Microcharts.Forms"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             ios:Page.UseSafeArea="true"
+             mc:Ignorable="d"
+             x:Class="who_pocket_book.Pages.InfectiousDiseasesPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+              
+                <Label x:Name="vaccinationCoverageTitle" 
+                                HorizontalOptions="Center"
+                                FontAttributes="Bold"
+                                VerticalTextAlignment="Center"
+                                HorizontalTextAlignment="Center"
+                                FontSize="18"
+                                TextColor="{DynamicResource colorPageTitle}"
+                                Margin="0,0,0,8"/>
+
+                
+                
+                
+                <Grid BackgroundColor="{DynamicResource colorPageTitle}">
+                    <Label x:Name="vaccinationDiphtheria"
+                                           HorizontalOptions="FillAndExpand"
+                                           TextColor="White"
+                                           Margin="8,0,0,0"
+                                           FontSize="16"
+                                           VerticalOptions="Center"/>
+                </Grid>
+                <ScrollView Orientation="Horizontal"
+                            HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" 
+                                 HorizontalOptions="FillAndExpand"
+                              Margin="0,0,0,8">
+
+                        <microcharts:ChartView x:Name="chartViewDiphtheria" 
+                                       HeightRequest="200"/>
+                    </StackLayout>
+                </ScrollView>
+
+
+
+
+
+                <Grid BackgroundColor="{DynamicResource colorPageTitle}">
+                    <Label x:Name="vaccinationMeasles"
+                                           HorizontalOptions="FillAndExpand"
+                                           TextColor="White"
+                                           Margin="8,0,0,0"
+                                           FontSize="16"
+                                           VerticalOptions="Center"/>
+                </Grid>
+                <ScrollView Orientation="Horizontal"
+                            HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal"
+                                 HorizontalOptions="FillAndExpand"
+                                  Margin="0,0,0,8">
+                        <microcharts:ChartView x:Name="chartViewMeasles" 
+                                           HeightRequest="200"/>
+                    </StackLayout>
+                </ScrollView>
+                
+                
+                
+                
+                
+                <Grid BackgroundColor="{DynamicResource colorPageTitle}">
+                    <Label x:Name="vaccinationHaemophilus"
+                                           HorizontalOptions="FillAndExpand"
+                                           TextColor="White"
+                                           Margin="8,0,0,0"
+                                           FontSize="16"
+                                           VerticalOptions="Center"/>
+                </Grid>
+                <StackLayout Orientation="Horizontal"
+                              Margin="0,0,0,8">
+                    <microcharts:ChartView x:Name="chartViewHaemophilus" 
+                                       HeightRequest="200"
+                                       HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+
+
+
+
+
+                
+                <Grid BackgroundColor="{DynamicResource colorPageTitle}" x:Name="vaccinationPCV1">
+                    <Label x:Name="vaccinationPCV"
+                                           HorizontalOptions="FillAndExpand"
+                                           TextColor="White"
+                                           Margin="8,0,0,0"
+                                           FontSize="16"
+                                           VerticalOptions="Center"/>
+                </Grid>
+                <StackLayout  x:Name="vaccinationPCV2"
+                              Orientation="Horizontal"
+                              Margin="0,0,0,8">
+                    <Label
+                        x:Name="vaccinationPCVNotAvailable"
+                                Margin="16,16,16,16"
+                                Text="{DynamicResource data_not_available}"
+                                IsVisible="False"
+                                FontSize="16"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="Center"/>
+                    <microcharts:ChartView x:Name="chartViewPCV" 
+                                       HeightRequest="200"
+                                       HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+
+
+
+
+                <Grid BackgroundColor="{DynamicResource colorPageTitle}"  x:Name="vaccinationHPV1">
+                    <Label x:Name="vaccinationHPV"
+                                           HorizontalOptions="FillAndExpand"
+                                           TextColor="White"
+                                           Margin="8,0,0,0"
+                                           FontSize="16"
+                                           VerticalOptions="Center"/>
+                </Grid>
+                <StackLayout Orientation="Horizontal"
+                              Margin="0,0,0,8"  x:Name="vaccinationHPV2">
+                    <Label
+                        x:Name="vaccinationHPVNotAvailable"
+                                Margin="16,16,16,16"
+                                Text="{DynamicResource data_not_available}"
+                                IsVisible="False"
+                                FontSize="16"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="Center"/>
+                    <microcharts:ChartView x:Name="chartViewHPV" 
+                                       HeightRequest="200"
+                                       HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+
+
+
+
+
+
+
+
+
+                <Grid BackgroundColor="{DynamicResource colorPageTitle}"  x:Name="vaccinationRotavirus1" >
+                    <Label x:Name="vaccinationRotavirus"
+                                           HorizontalOptions="FillAndExpand"
+                                           TextColor="White"
+                                           Margin="8,0,0,0"
+                                           FontSize="16"
+                                           VerticalOptions="Center"/>
+                </Grid>
+                <StackLayout Orientation="Horizontal"
+                              Margin="0,0,0,8"
+                               x:Name="vaccinationRotavirus2" >
+                    <Label
+                        x:Name="vaccinationRotavirusNotAvailable"
+                                Margin="16,16,16,16"
+                                Text="{DynamicResource data_not_available}"
+                                IsVisible="False"
+                                FontSize="16"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="Center"/>
+                    
+                    <microcharts:ChartView x:Name="chartViewRotavirus" 
+                                       HeightRequest="200"
+                                       HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                
+                
+                
+                
+               <Label x:Name="diarrhoeaTitle" 
+                                HorizontalOptions="Center"
+                                FontAttributes="Bold"
+                                FontSize="18"
+                                HorizontalTextAlignment="Center"
+                                VerticalTextAlignment="Center"
+                                TextColor="{DynamicResource colorPageTitle}"
+                                Margin="16,0,16,8"/>
+                <StackLayout Orientation="Horizontal"
+                              Margin="0,0,0,8" x:Name="diarrhoeaContainer">
+                    <Label
+                        x:Name="diarrhoeaNotAvailable"
+                                Margin="16,16,16,16"
+                                Text="{DynamicResource data_not_available}"
+                                IsVisible="False"
+                                FontSize="16"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="Center"/>
+                    <microcharts:ChartView x:Name="chartViewDiarrhoea" 
+                                       HeightRequest="200"
+                                       HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+                
+                
+                
+                
+                
+                
+                <Label x:Name="tuberculosisTitle" 
+                                HorizontalOptions="Center"
+                                FontAttributes="Bold"
+                                FontSize="18"
+                                HorizontalTextAlignment="Center"
+                                VerticalTextAlignment="Center"
+                                TextColor="{DynamicResource colorPageTitle}"
+                                Margin="16,0,16,8"/>
+                <StackLayout Orientation="Horizontal"
+                              Margin="0,0,0,8" x:Name="tuberculosisContainer">
+                    <Label
+                        x:Name="tuberculosisNotAvailable"
+                                Margin="16,16,16,16"
+                                Text="{DynamicResource data_not_available}"
+                                IsVisible="False"
+                                FontSize="16"
+                                HorizontalOptions="CenterAndExpand"
+                                VerticalOptions="Center"/>
+                    <microcharts:ChartView x:Name="chartViewTuberculosis" 
+                                       HeightRequest="200"
+                                       HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+
+                
+                
+                
+                
+                
+                <Label x:Name="hivRatesTitle" 
+                                HorizontalOptions="Center"
+                                FontAttributes="Bold"
+                                FontSize="18"
+                                TextColor="{DynamicResource colorPageTitle}"
+                                Margin="0,0,0,8"/>
+                <Grid BackgroundColor="{DynamicResource colorPageTitle}" x:Name="estimatedHIVRatesContainer">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="estimatedHIVRates"
+                            HorizontalOptions="FillAndExpand"
+                            TextColor="White"
+                            FontSize="14"
+                            Grid.Row="0"
+                           Margin="8,0,0,0"
+                           Grid.Column="0"
+                         VerticalOptions="Center"/>
+                    <Label
+                            Text="{DynamicResource year}"
+                            TextColor="White"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                        Margin="0,0,16,0"
+                            FontSize="14"
+                            VerticalOptions="Center"/>
+                </Grid>
+
+
+
+
+
+                <StackLayout Orientation="Horizontal" x:Name="estimatedHIVRatesContainer1">
+                    <Label x:Name="estimatedHIVRatesData"
+                                           HorizontalOptions="FillAndExpand"
+                                           Margin="8,0,0,0"
+                           TextColor="{DynamicResource colorPageTitle}"
+                                           FontSize="16"/>
+                    <Label x:Name="estimatedHIVRatesYears"
+                                           TextColor="{DynamicResource colorPageTitle}"
+                                           Margin="0,0,8,0"
+                                           FontSize="16"/>
+                </StackLayout>
+                <Grid BackgroundColor="{DynamicResource colorPageTitle}" x:Name="estimatedHIVRatesContainer2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="estimatedHIVRatesFemale"
+                           HorizontalOptions="FillAndExpand"
+                           TextColor="White"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                            Margin="8,0,0,0"
+                            FontSize="14"
+                            VerticalOptions="Center"/>
+                    <Label
+                            Text="{DynamicResource year}"
+                            TextColor="White"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                        Margin="0,0,16,0"
+                            FontSize="14"
+                            VerticalOptions="Center"/>
+                </Grid>
+
+
+
+
+                <StackLayout Orientation="Horizontal" x:Name="estimatedHIVRatesFemaleContainer1">
+                    <Label x:Name="estimatedHIVRatesFemaleData"
+                                           HorizontalOptions="FillAndExpand"
+                                           TextColor="{DynamicResource colorPageTitle}"
+                                           Margin="8,0,0,0"
+                                           FontSize="16"/>
+                    <Label x:Name="estimatedHIVRatesFemaleYears"
+                                           TextColor="{DynamicResource colorPageTitle}"
+                                           Margin="0,0,8,0"
+                                           FontSize="16"/>
+                </StackLayout>
+                <Grid BackgroundColor="{DynamicResource colorPageTitle}" x:Name="estimatedHIVRatesFemaleContainer2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="estimatedHIVRatesMale"
+                                           HorizontalOptions="FillAndExpand"
+                                           TextColor="White"
+                           Grid.Row="0"
+                           Grid.Column="0"
+                                           Margin="8,0,0,0"
+                                           FontSize="14"
+                                           VerticalOptions="Center"/>
+                    <Label
+                            Text="{DynamicResource year}"
+                            TextColor="White"
+                           Grid.Row="0"
+                           Grid.Column="1"
+                        Margin="0,0,16,0"
+                            FontSize="14"
+                            VerticalOptions="Center"/>
+                </Grid>
+                
+                
+                
+                
+                <StackLayout Orientation="Horizontal"
+                             Margin="0,0,0,16" x:Name="estimatedHIVRatesMaleContainer">
+                    <Label x:Name="estimatedHIVRatesMaleData"
+                                           HorizontalOptions="FillAndExpand"
+                                           TextColor="{DynamicResource colorPageTitle}"
+                                           Margin="8,0,0,0"
+                                           FontSize="16"/>
+                    <Label x:Name="estimatedHIVRatesMaleYears"
+                                           TextColor="{DynamicResource colorPageTitle}"
+                                           Margin="0,0,8,0"
+                                           FontSize="16"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

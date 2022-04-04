@@ -1,0 +1,110 @@
+[
+    [
+        {
+            "id": 1,
+            "title": "5.1 Içgeçmeli çaga",
+            "childElement": "ch05_01.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "5.2 Ýiti içgeçme",
+            "childElement": "ch05_02.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 3,
+            "title": "5.3 Uzaga çeken içgeçme",
+            "childElement": "ch05_03.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 4,
+            "title": "5.4 Ganly içgeçme",
+            "childElement": "ch05_04.html",
+            "childElementType": "chapter"
+        }
+    ],
+    [
+        {
+            "id": 1,
+            "title": "Nusga 13. W-meýilmana içgeçme bejerilende: Agyr suwsyzlykda kömegiň berlişi",
+            "childElement": "sh13.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 2,
+            "title": "Nusga 14. B-meýilnama içgeçme bejerilende: Aram suwsyzlygyň ORS kömegi bilen bejerilişi",
+            "childElement": "sh14.html",
+            "childElementType": "chapter"
+        },
+        {
+            "id": 3,
+            "title": "Nusga 15. A-meýilnama içgeçme bejerilende: Içgeçmäniň öý şertlerinde bejergisi",
+            "childElement": "sh15.html",
+            "childElementType": "chapter"
+        }
+    ],
+    [
+       {
+            "id": 1,
+            "title": "Bu bapda 1 hepdeden 5 ýaş aralygyndaky ýiti we uzaga çeken içgeçmeli suwsyzlygyň dürli derejeleri bilen we ganly içgeçmeli (dizenteriýaly) çagalary alyp barmaklygyň esasy masla-hatlary berilen. Iýmitlenmäniň agyr bozulmalary bar bolan çagalaryň alnyp barlyşy ",
+            "childElement": null,
+            "childElementType": "html"
+        },
+        {
+            "id": 2,
+            "title": "bap 7.2",
+            "childElement": "ch07_02.html",
+            "childElementType": "link"
+        },
+        {
+            "id": 3,
+            "title": " we ",
+            "childElement": null,
+            "childElementType": "html"
+        },
+        {
+            "id": 4,
+            "title": "bap 7.3",
+            "childElement": "ch07_03.html",
+            "childElementType": "link"
+        },
+        {
+            "id": 5,
+            "title": ". Içgeçmeli çagalary alyp barmakda iki möhüm bölümler: regidratasion bejergi, sink serişdelerini bermek we ejelere iýmitlenme we içgeçmäniň öňüni almak boýunça maslahatlary bermek bolup durýar.",
+            "childElement": null,
+            "childElementType": "html"
+        },
+        {
+            "id": 6,
+            "title": "Içgeçme wagtynda çagalar suwuk täret bilen suwuklygy we elektrolitleri (natriý, kaliý, bikorbanatlary) we sinki ýitirýärler. Eger-de ýitirilen suwuklygyň we elekrtolitleriň öwezi dolunmasa çagada suwsyzlyk döremegi mümkin. Suwuklygyň möçberiniň ýitirilişine görä suwsyzlygyň anyklaýan öz alamatlary bar. Bu alamatlar barada ",
+            "childElement": null,
+            "childElementType": "html"
+        },
+        {
+            "id": 7,
+            "title": "bap 2.3",
+            "childElement": "ch02_03.html",
+            "childElementType": "link"
+        },
+        {
+            "id": 8,
+            "title": " we ",
+            "childElement": null,
+            "childElementType": "html"
+        },
+        {
+            "id": 9,
+            "title": "bap 5.2",
+            "childElement": "ch05_02.html",
+            "childElementType": "link"
+        },
+        {
+            "id": 10,
+            "title": " beýan ediler. Suwsyzlygyň derejesi boýunça redidratasýany geçrmekligiň düzgüni bellenýär. Hemme çagalar goşmaça sinkiň serişdelerini almaydyrlar. Içgeçme wagtynda iýmitlendirmäniň möçberiniň azalmagy we iýmit siňdirijligiň peselmegi sebäpli, şeýle-de mikroelementlere bolan talabyň köpelmekligi köplenç bile geçýär we çaganyň agramynyň peselmekligini we boý taýdan ösüşini togtadyp bilýär. Öz gezeginde içgeçme iýmtlendirmäniň bozulmalary bolan çagalarda agyr, has uzak geçýär we iýmitlendirmäniň kynçylyklary bolmadyk çagalar bilen deňeşdirlende ýygy duşýar. Bu ýagdaýyň öňüni çagalara içi geçýän we sagdyn wagtlary mikroelementlere baý bolan iýmtleri bermek bilen alyp bolar. Içgeçmede antibiotikleri gündelik ulanmaklyk maslahat berilmeýär. Olar diňe ganly içgeçmede (mümkin dizenteriýa), agyr suwuksyzlygyň alamatlary bolan mergide we beýleki agyr gaýnaglama hadysalarynda, mysal üçin pnewmoniýada we peşew ýollarynyň ýokan-jynda ulanmaklyk maslahat berilýär. Protozoýlara garşy serişdeleri ulanmaklyk seýrek ýagdaýlarda gerek bolýar. Kiçijik çagalarda ýiti we uzaga çeken içgeçmelerde ýa-da ganly içgeçmede içgeçmä garşy serişdeleri ýa-da gaýtarmaklyga garşy serişdeleri ulanmaklyk maslahat berilmeýär: olar suwuksyzlygyň öňüni almaýar we iýmitlenmäniň ýagdaýyny gowulandyrmaýarlar, olaryň käbirleri bolsa howplydyr, käbir ýagdaýlarda ölüme hem getirip bilerler.",
+            "childElement": null,
+            "childElementType": "html"
+        }
+    ]
+]
